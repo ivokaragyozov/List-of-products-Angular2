@@ -15,7 +15,7 @@ var FavouriteProductsComponent = (function () {
         this.productsService = productsService;
         this.favouriteProducts = [];
     }
-    FavouriteProductsComponent.prototype.getFavouritesProducts = function () {
+    FavouriteProductsComponent.prototype.getFavouriteProducts = function () {
         this.favouriteProducts = this.productsService.getFavourites();
     };
     FavouriteProductsComponent.prototype.changeState = function (id) {
@@ -27,7 +27,7 @@ var FavouriteProductsComponent = (function () {
         this.favouriteProducts = this.productsService.getFavourites();
     };
     FavouriteProductsComponent.prototype.ngOnInit = function () {
-        this.getFavouritesProducts();
+        this.getFavouriteProducts();
     };
     return FavouriteProductsComponent;
 }());

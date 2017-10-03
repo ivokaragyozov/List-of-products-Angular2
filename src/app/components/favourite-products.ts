@@ -17,7 +17,7 @@ export class FavouriteProductsComponent implements OnInit {
 
 	}
 
-	getFavouritesProducts(): void {
+	getFavouriteProducts(): void {
 		this.favouriteProducts = this.productsService.getFavourites();
 	}
 
@@ -32,6 +32,6 @@ export class FavouriteProductsComponent implements OnInit {
 	}
 
 	ngOnInit(): void {
-		this.getFavouritesProducts();
+		this.getFavouriteProducts();
 	}
 }
