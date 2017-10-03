@@ -1,0 +1,11 @@
+<div>
+    <h3>Here are all the favourite products</h3>
+    <ul class="product">
+	    <li *ngFor="let product of favouriteProducts">
+	        <img *ngIf="product.isFavourite" (click)="changeState(product.id)" src="../../images/filledStar.png" display="block" width="1%" height="1%" />
+	        <img *ngIf="!product.isFavourite" (click)="changeState(product.id)" src="../../images/unfilledStar.png" display="block" width="1%" height="1%" />
+	        <span>{{product.name}}</span>
+	        <img (click)="deleteProduct(product.id)" src="../../images/deleteButton.png" display="block" width="1%" height="1%" />
+	    </li>
+	</ul>
+</div>
